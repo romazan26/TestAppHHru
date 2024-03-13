@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		309CEA0E2BA1C60900C70B81 /* TestAppHHruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA0D2BA1C60900C70B81 /* TestAppHHruApp.swift */; };
-		309CEA102BA1C60900C70B81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA0F2BA1C60900C70B81 /* ContentView.swift */; };
+		309CEA102BA1C60900C70B81 /* TabViewBootamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA0F2BA1C60900C70B81 /* TabViewBootamp.swift */; };
 		309CEA122BA1C60B00C70B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309CEA112BA1C60B00C70B81 /* Assets.xcassets */; };
 		309CEA152BA1C60B00C70B81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309CEA142BA1C60B00C70B81 /* Preview Assets.xcassets */; };
+		309CEA1D2BA1C69800C70B81 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 309CEA1C2BA1C69800C70B81 /* Alamofire */; };
+		309CEA1F2BA1C69800C70B81 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 309CEA1E2BA1C69800C70B81 /* AlamofireDynamic */; };
+		309CEA212BA1CAA700C70B81 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA202BA1CAA700C70B81 /* LoginView.swift */; };
+		309CEA232BA228C500C70B81 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA222BA228C500C70B81 /* OTPTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		309CEA0A2BA1C60900C70B81 /* TestAppHHru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAppHHru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309CEA0D2BA1C60900C70B81 /* TestAppHHruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppHHruApp.swift; sourceTree = "<group>"; };
-		309CEA0F2BA1C60900C70B81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		309CEA0F2BA1C60900C70B81 /* TabViewBootamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewBootamp.swift; sourceTree = "<group>"; };
 		309CEA112BA1C60B00C70B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		309CEA142BA1C60B00C70B81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		309CEA202BA1CAA700C70B81 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		309CEA222BA228C500C70B81 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309CEA1D2BA1C69800C70B81 /* Alamofire in Frameworks */,
+				309CEA1F2BA1C69800C70B81 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				309CEA0D2BA1C60900C70B81 /* TestAppHHruApp.swift */,
-				309CEA0F2BA1C60900C70B81 /* ContentView.swift */,
+				309CEA0F2BA1C60900C70B81 /* TabViewBootamp.swift */,
 				309CEA112BA1C60B00C70B81 /* Assets.xcassets */,
 				309CEA132BA1C60B00C70B81 /* Preview Content */,
+				309CEA202BA1CAA700C70B81 /* LoginView.swift */,
+				309CEA222BA228C500C70B81 /* OTPTextField.swift */,
 			);
 			path = TestAppHHru;
 			sourceTree = "<group>";
@@ -83,6 +93,10 @@
 			dependencies = (
 			);
 			name = TestAppHHru;
+			packageProductDependencies = (
+				309CEA1C2BA1C69800C70B81 /* Alamofire */,
+				309CEA1E2BA1C69800C70B81 /* AlamofireDynamic */,
+			);
 			productName = TestAppHHru;
 			productReference = 309CEA0A2BA1C60900C70B81 /* TestAppHHru.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 309CEA012BA1C60900C70B81;
+			packageReferences = (
+				309CEA1B2BA1C69800C70B81 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 309CEA0B2BA1C60900C70B81 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				309CEA102BA1C60900C70B81 /* ContentView.swift in Sources */,
+				309CEA212BA1CAA700C70B81 /* LoginView.swift in Sources */,
+				309CEA232BA228C500C70B81 /* OTPTextField.swift in Sources */,
+				309CEA102BA1C60900C70B81 /* TabViewBootamp.swift in Sources */,
 				309CEA0E2BA1C60900C70B81 /* TestAppHHruApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +363,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		309CEA1B2BA1C69800C70B81 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		309CEA1C2BA1C69800C70B81 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 309CEA1B2BA1C69800C70B81 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		309CEA1E2BA1C69800C70B81 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 309CEA1B2BA1C69800C70B81 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 309CEA022BA1C60900C70B81 /* Project object */;
 }
