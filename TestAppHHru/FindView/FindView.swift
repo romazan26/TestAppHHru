@@ -8,20 +8,14 @@
 import SwiftUI
 
 struct FindView: View {
+    @StateObject var viewModel = FindViewController()
+    
     var body: some View {
         VStack {
             ScrollView(.horizontal) {
                 HStack{
-                    ForEach(0..<4) { _ in
-                        VStack {
-                            Circle()
-                                .frame(width: 32,height: 32)
-                                .foregroundStyle(.blue)
-                            Text("Ваансии рядом")
-                        }
-                        .frame(width: 132, height: 120)
-                        .background(Color.gray)
-                        .cornerRadius(10)
+                    ForEach(viewModel.offers, id: \.self.id) { offer in
+                        
                     }
                 }
             }
