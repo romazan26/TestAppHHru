@@ -25,6 +25,8 @@
 		309CEA362BA3137800C70B81 /* offerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA352BA3137800C70B81 /* offerCellView.swift */; };
 		30B2AB912BA36F1A002D334E /* VacancyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB902BA36F1A002D334E /* VacancyListView.swift */; };
 		30B2AB942BA37189002D334E /* TextFieldImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB932BA37189002D334E /* TextFieldImageView.swift */; };
+		30B2AB962BA38712002D334E /* VacancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB952BA38712002D334E /* VacancyView.swift */; };
+		30B2AB992BA387CF002D334E /* VacancyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB982BA387CF002D334E /* VacancyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		309CEA352BA3137800C70B81 /* offerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offerCellView.swift; sourceTree = "<group>"; };
 		30B2AB902BA36F1A002D334E /* VacancyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyListView.swift; sourceTree = "<group>"; };
 		30B2AB932BA37189002D334E /* TextFieldImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldImageView.swift; sourceTree = "<group>"; };
+		30B2AB952BA38712002D334E /* VacancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyView.swift; sourceTree = "<group>"; };
+		30B2AB982BA387CF002D334E /* VacancyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		309CEA0C2BA1C60900C70B81 /* TestAppHHru */ = {
 			isa = PBXGroup;
 			children = (
+				30B2AB972BA387AF002D334E /* VacancyView */,
 				30B2AB922BA37145002D334E /* Extention */,
 				309CEA2E2BA2F8AB00C70B81 /* Model */,
 				309CEA292BA2EC1800C70B81 /* FindView */,
@@ -137,6 +142,15 @@
 				30B2AB932BA37189002D334E /* TextFieldImageView.swift */,
 			);
 			path = Extention;
+			sourceTree = "<group>";
+		};
+		30B2AB972BA387AF002D334E /* VacancyView */ = {
+			isa = PBXGroup;
+			children = (
+				30B2AB952BA38712002D334E /* VacancyView.swift */,
+				30B2AB982BA387CF002D334E /* VacancyViewModel.swift */,
+			);
+			path = VacancyView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +232,7 @@
 			files = (
 				309CEA302BA2F91700C70B81 /* Model.swift in Sources */,
 				309CEA212BA1CAA700C70B81 /* LoginView.swift in Sources */,
+				30B2AB992BA387CF002D334E /* VacancyViewModel.swift in Sources */,
 				309CEA232BA228C500C70B81 /* OTPTextField.swift in Sources */,
 				309CEA362BA3137800C70B81 /* offerCellView.swift in Sources */,
 				309CEA2D2BA2F59700C70B81 /* JobCellView.swift in Sources */,
@@ -227,6 +242,7 @@
 				30B2AB942BA37189002D334E /* TextFieldImageView.swift in Sources */,
 				30B2AB912BA36F1A002D334E /* VacancyListView.swift in Sources */,
 				309CEA342BA2FC8C00C70B81 /* FindViewModel.swift in Sources */,
+				30B2AB962BA38712002D334E /* VacancyView.swift in Sources */,
 				309CEA102BA1C60900C70B81 /* TabViewBootamp.swift in Sources */,
 				309CEA262BA2DF0F00C70B81 /* PinCodeView.swift in Sources */,
 				309CEA0E2BA1C60900C70B81 /* TestAppHHruApp.swift in Sources */,

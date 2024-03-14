@@ -15,10 +15,12 @@ struct TextFieldImageView: View {
     var body: some View {
         HStack {
             HStack {
-                Image(systemName: systemImage).foregroundStyle(.gray)
+                Image(systemName: systemImage)
+                    .padding(5)
+                    .foregroundStyle(.gray)
                 TextField(placeholder, text: $text)
             }
-            .padding()
+            .frame(width: 320,height: 40)
         }
         .background(Color.gray.opacity(0.4)).cornerRadius(8)
         

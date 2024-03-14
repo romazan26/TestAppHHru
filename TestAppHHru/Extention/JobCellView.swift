@@ -18,7 +18,9 @@ struct JobCellView: View {
                     Text("Сейчас просматривает человек")
                         .foregroundStyle(.green)
                     Spacer()
-                    Image(systemName: vacancy.isFavorite ? "heart.fill" : "heart").foregroundStyle(.blue)
+                    Image(systemName: vacancy.isFavorite ? "heart.fill" : "heart")
+                        .foregroundStyle(.blue)
+                        .frame(width: 24,height: 24)
                 }
                 Text(vacancy.title).font(.title2)
                 Text(vacancy.address.town)

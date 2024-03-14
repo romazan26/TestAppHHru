@@ -12,18 +12,13 @@ struct LoginView: View {
     @ObservedObject var viewModel: LoginViewModel
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text("Вход в личный кабинет").font(.title2)
             Spacer()
-            GroupBox {
+            VStack(spacing: 15) {
                 VStack(alignment: .leading, spacing: 5){
                     Text("Поиск работы")
-                    TextField(text: $viewModel.email) {
-                        Label("Электронная почта или телефон", systemImage: "envelope")
-                    }
-                    .padding()
-                    .background(Color.gray.opacity(0.4))
-                    .cornerRadius(10)
+                    TextFieldImageView(systemImage: "envelope", placeholder: "Электронная почта или телефон", text: $viewModel.email)
                 }
                 HStack{
                     Button("Продолжить") {
@@ -40,8 +35,12 @@ struct LoginView: View {
                     .frame(width: 167, height: 40)
                 }
             }
-            GroupBox {
-                VStack(alignment: .leading, spacing: 5) {
+            .padding(10)
+            .background(Color.gray.opacity(0.4))
+            .cornerRadius(8)
+            
+            
+                VStack(alignment: .leading, spacing: 15) {
                     Text("Поиск сотрудников").font(.title3)
                     Text("Размещение вакансий и доступ к базе резюме").font(.system(size: 14))
                     Button {
@@ -57,7 +56,10 @@ struct LoginView: View {
                         }
                     }
                 }
-            }
+            
+            .padding(10)
+            .background(Color.gray.opacity(0.4))
+            .cornerRadius(8)
             Spacer()
         }.padding()
     }
