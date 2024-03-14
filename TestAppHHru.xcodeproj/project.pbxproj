@@ -21,7 +21,7 @@
 		309CEA2D2BA2F59700C70B81 /* JobCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA2C2BA2F59700C70B81 /* JobCellView.swift */; };
 		309CEA302BA2F91700C70B81 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA2F2BA2F91700C70B81 /* Model.swift */; };
 		309CEA322BA2FAD300C70B81 /* NetWorkmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA312BA2FAD300C70B81 /* NetWorkmanager.swift */; };
-		309CEA342BA2FC8C00C70B81 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA332BA2FC8C00C70B81 /* FindViewController.swift */; };
+		309CEA342BA2FC8C00C70B81 /* FindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA332BA2FC8C00C70B81 /* FindViewModel.swift */; };
 		309CEA362BA3137800C70B81 /* offerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA352BA3137800C70B81 /* offerCellView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +39,7 @@
 		309CEA2C2BA2F59700C70B81 /* JobCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCellView.swift; sourceTree = "<group>"; };
 		309CEA2F2BA2F91700C70B81 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		309CEA312BA2FAD300C70B81 /* NetWorkmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkmanager.swift; sourceTree = "<group>"; };
-		309CEA332BA2FC8C00C70B81 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		309CEA332BA2FC8C00C70B81 /* FindViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewModel.swift; sourceTree = "<group>"; };
 		309CEA352BA3137800C70B81 /* offerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offerCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +111,7 @@
 			children = (
 				309CEA2A2BA2EC3700C70B81 /* FindView.swift */,
 				309CEA2C2BA2F59700C70B81 /* JobCellView.swift */,
-				309CEA332BA2FC8C00C70B81 /* FindViewController.swift */,
+				309CEA332BA2FC8C00C70B81 /* FindViewModel.swift */,
 				309CEA352BA3137800C70B81 /* offerCellView.swift */,
 			);
 			path = FindView;
@@ -210,7 +210,7 @@
 				309CEA282BA2E1A700C70B81 /* LoginViewModel.swift in Sources */,
 				309CEA2B2BA2EC3700C70B81 /* FindView.swift in Sources */,
 				309CEA322BA2FAD300C70B81 /* NetWorkmanager.swift in Sources */,
-				309CEA342BA2FC8C00C70B81 /* FindViewController.swift in Sources */,
+				309CEA342BA2FC8C00C70B81 /* FindViewModel.swift in Sources */,
 				309CEA102BA1C60900C70B81 /* TabViewBootamp.swift in Sources */,
 				309CEA262BA2DF0F00C70B81 /* PinCodeView.swift in Sources */,
 				309CEA0E2BA1C60900C70B81 /* TestAppHHruApp.swift in Sources */,

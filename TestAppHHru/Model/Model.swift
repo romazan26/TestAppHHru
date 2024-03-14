@@ -18,11 +18,11 @@ struct Offer: Codable {
     let id: String?
     let title: String
     let link: String
-    let button: Button?
+    let button: Buttonn?
 }
 
-// MARK: - Button
-struct Button: Codable {
+// MARK: - Buttonn
+struct Buttonn: Codable {
     let text: String
 }
 

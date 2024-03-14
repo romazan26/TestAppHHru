@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class FindViewController: ObservableObject {
+final class FindViewModel: ObservableObject {
     
     private var netWorkManager = NetWorkManager()
     

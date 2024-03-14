@@ -8,21 +8,20 @@
 import SwiftUI
 
 struct FindView: View {
-    @StateObject var viewModel = FindViewController()
+    @StateObject var viewModel = FindViewModel()
     
     var body: some View {
         VStack {
             ScrollView(.horizontal) {
                 HStack{
                     ForEach(viewModel.offers, id: \.self.id) { offer in
-                        
+                       offerCellView(offer: offer)
                     }
                 }
             }
             Text("Вакансии для вас")
             VStack {
-               JobCellView()
-                JobCellView()
+               
             }
         }
     }
