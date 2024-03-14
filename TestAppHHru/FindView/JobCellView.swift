@@ -37,8 +37,8 @@ struct JobCellView: View {
             })
         }
         .padding(10)
-        .frame(width: 328, height: 233)
-        .background(Color.gray)
+        //.frame(width: 328, height: 233)
+        .background(Color.gray.opacity(0.4))
         .cornerRadius(10)
         
     }

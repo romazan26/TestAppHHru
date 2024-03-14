@@ -13,6 +13,7 @@ final class FindViewModel: ObservableObject {
     
     @Published var offers = [Offer]()
     @Published var vacancies = [Vacancy]()
+    @Published var seachText = ""
     
     init() {
         netWorkManager.fetchData { [weak self] searchResults in

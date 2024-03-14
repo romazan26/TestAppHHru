@@ -40,7 +40,7 @@ struct offerCellView: View {
                 .font(.system(size: 14))
         }
         .frame(width: 132, height: 120)
-        .background(Color.gray)
+        .background(Color.gray.opacity(0.4))
         .cornerRadius(10)
     }
 }
