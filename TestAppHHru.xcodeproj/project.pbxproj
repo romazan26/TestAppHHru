@@ -23,6 +23,8 @@
 		309CEA322BA2FAD300C70B81 /* NetWorkmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA312BA2FAD300C70B81 /* NetWorkmanager.swift */; };
 		309CEA342BA2FC8C00C70B81 /* FindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA332BA2FC8C00C70B81 /* FindViewModel.swift */; };
 		309CEA362BA3137800C70B81 /* offerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA352BA3137800C70B81 /* offerCellView.swift */; };
+		30B2AB912BA36F1A002D334E /* VacancyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB902BA36F1A002D334E /* VacancyListView.swift */; };
+		30B2AB942BA37189002D334E /* TextFieldImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB932BA37189002D334E /* TextFieldImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		309CEA312BA2FAD300C70B81 /* NetWorkmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkmanager.swift; sourceTree = "<group>"; };
 		309CEA332BA2FC8C00C70B81 /* FindViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewModel.swift; sourceTree = "<group>"; };
 		309CEA352BA3137800C70B81 /* offerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offerCellView.swift; sourceTree = "<group>"; };
+		30B2AB902BA36F1A002D334E /* VacancyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyListView.swift; sourceTree = "<group>"; };
+		30B2AB932BA37189002D334E /* TextFieldImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		309CEA0C2BA1C60900C70B81 /* TestAppHHru */ = {
 			isa = PBXGroup;
 			children = (
+				30B2AB922BA37145002D334E /* Extention */,
 				309CEA2E2BA2F8AB00C70B81 /* Model */,
 				309CEA292BA2EC1800C70B81 /* FindView */,
 				309CEA242BA2DED900C70B81 /* LoginView */,
@@ -110,9 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				309CEA2A2BA2EC3700C70B81 /* FindView.swift */,
-				309CEA2C2BA2F59700C70B81 /* JobCellView.swift */,
 				309CEA332BA2FC8C00C70B81 /* FindViewModel.swift */,
-				309CEA352BA3137800C70B81 /* offerCellView.swift */,
+				30B2AB902BA36F1A002D334E /* VacancyListView.swift */,
 			);
 			path = FindView;
 			sourceTree = "<group>";
@@ -123,6 +127,16 @@
 				309CEA2F2BA2F91700C70B81 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		30B2AB922BA37145002D334E /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				309CEA2C2BA2F59700C70B81 /* JobCellView.swift */,
+				309CEA352BA3137800C70B81 /* offerCellView.swift */,
+				30B2AB932BA37189002D334E /* TextFieldImageView.swift */,
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +224,8 @@
 				309CEA282BA2E1A700C70B81 /* LoginViewModel.swift in Sources */,
 				309CEA2B2BA2EC3700C70B81 /* FindView.swift in Sources */,
 				309CEA322BA2FAD300C70B81 /* NetWorkmanager.swift in Sources */,
+				30B2AB942BA37189002D334E /* TextFieldImageView.swift in Sources */,
+				30B2AB912BA36F1A002D334E /* VacancyListView.swift in Sources */,
 				309CEA342BA2FC8C00C70B81 /* FindViewModel.swift in Sources */,
 				309CEA102BA1C60900C70B81 /* TabViewBootamp.swift in Sources */,
 				309CEA262BA2DF0F00C70B81 /* PinCodeView.swift in Sources */,
