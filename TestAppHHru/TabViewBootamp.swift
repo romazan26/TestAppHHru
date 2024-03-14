@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct TabViewBootamp: View {
+    
+    @ObservedObject var viewModel: LoginViewModel
+    
     var body: some View {
          
         TabView {
-            OTPTextField(numberOfFields: 4)
-                .tabItem { Label("Поиск", systemImage: "magnifyingglass") }
+            if viewModel.isLogin {
+                FindView()
+                    .tabItem { Label("Поиск", systemImage: "magnifyingglass") }
+            }else {
+                LoginView(viewModel: viewModel)
+                    .tabItem { Label("Поиск", systemImage: "magnifyingglass") }
+            }
+                
             Text("Избранное")
                 .tabItem { Label("Избранное", systemImage: "heart") }
             Text("Отклики")
@@ -26,5 +35,5 @@ struct TabViewBootamp: View {
 }
 
 #Preview {
-    TabViewBootamp()
+    TabViewBootamp(viewModel: LoginViewModel())
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct TestAppHHruApp: App {
     var body: some Scene {
         WindowGroup {
-            TabViewBootamp()
+            TabViewBootamp(viewModel: LoginViewModel())
         }
     }
 }

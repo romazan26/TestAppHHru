@@ -23,7 +23,7 @@ struct OTPTextField: View {
     var body: some View {
         HStack {
             ForEach(0..<numberOfFields, id: \.self) {index in
-                TextField("", text: $enterValue[index], onEditingChanged: { editing in
+                TextField("*", text: $enterValue[index], onEditingChanged: { editing in
                     if editing {
                         oldValue = enterValue[index]
                     }

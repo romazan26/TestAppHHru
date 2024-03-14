@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var email = ""
+    
+    @ObservedObject var viewModel: LoginViewModel
+    
     var body: some View {
         VStack {
             Text("Вход в личный кабинет").font(.title2)
@@ -16,18 +18,22 @@ struct LoginView: View {
             GroupBox {
                 VStack(alignment: .leading, spacing: 5){
                     Text("Поиск работы")
-                    TextField(text: $email) {
+                    TextField(text: $viewModel.email) {
                         Label("Электронная почта или телефон", systemImage: "envelope")
                     }
                     .padding()
-                        .background(Color.gray.opacity(0.4))
-                        .cornerRadius(10)
+                    .background(Color.gray.opacity(0.4))
+                    .cornerRadius(10)
                 }
                 HStack{
                     Button("Продолжить") {
-                     //action
+                        viewModel.checkEmail()
                     }.buttonStyle(.borderedProminent)
                         .frame(width: 167, height: 40)
+                        .sheet(isPresented: $viewModel.isCorrectEmail, content: {
+                            PinCodeView(viewModel: viewModel)
+                        })
+                    
                     Button("Войти с паролем") {
                         //action
                     }
@@ -50,9 +56,7 @@ struct LoginView: View {
                                 .font(.system(size: 14))
                         }
                     }
-
                 }
-                
             }
             Spacer()
         }.padding()
@@ -60,5 +64,6 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView()
+    LoginView(viewModel: LoginViewModel()
+    )
 }
