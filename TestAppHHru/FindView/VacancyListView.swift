@@ -24,7 +24,7 @@ struct VacancyListView: View {
                         VacancyView(viewModel: VacancyViewModel(vacancy: vacancy))
                     } label: {
                         JobCellView(vacancy: vacancy)
-                    }
+                    }.foregroundStyle(.white)
                 }
             }
             .toolbar(content: {

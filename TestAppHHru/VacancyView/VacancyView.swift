@@ -63,6 +63,15 @@ struct VacancyView: View {
                 }.padding(.top)
             }.padding(8)
         }
+        .toolbar(content: {
+            ToolbarItem {
+                HStack {
+                    Image(systemName: "eye")
+                    Image(systemName: "square.and.arrow.up")
+                    HeartView(isFavarite: viewModel.vacancy.isFavorite)
+                }
+            }
+        })
     }
 }
 

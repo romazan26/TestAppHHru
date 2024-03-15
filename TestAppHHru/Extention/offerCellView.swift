@@ -21,14 +21,22 @@ struct offerCellView: View {
     var body: some View {
         VStack(alignment: .leading) {
             if offer.id == "near_vacancies" {
-                Circle()
-                    .frame(width: 32,height: 32)
-                    .foregroundStyle(.blue)
+                ZStack{
+                    Circle()
+                        .foregroundStyle(.blue)
+                        .frame(width: 32,height: 32)
+                    Image(systemName: "person")
+                }
+                    
+                    
             }
             if offer.id == "level_up_resume" {
-                Circle()
-                    .frame(width: 32,height: 32)
-                    .foregroundStyle(.green)
+                ZStack{
+                    Circle()
+                        .foregroundStyle(.specialDarkgreen)
+                        .frame(width: 32,height: 32)
+                    Image(systemName: "star")
+                }
             }
             if offer.id == "temporary_job" {
                 Circle()
@@ -39,7 +47,7 @@ struct offerCellView: View {
                 .foregroundStyle(.white)
                 .font(.system(size: 14))
         }
-        .frame(width: 132, height: 120)
+        .frame(width: 132, height: 110)
         .background(Color.gray.opacity(0.4))
         .cornerRadius(10)
     }
