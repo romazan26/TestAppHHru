@@ -27,6 +27,7 @@
 		30B2AB942BA37189002D334E /* TextFieldImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB932BA37189002D334E /* TextFieldImageView.swift */; };
 		30B2AB962BA38712002D334E /* VacancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB952BA38712002D334E /* VacancyView.swift */; };
 		30B2AB992BA387CF002D334E /* VacancyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB982BA387CF002D334E /* VacancyViewModel.swift */; };
+		30B2AB9B2BA4D1EE002D334E /* CircleAndImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB9A2BA4D1EE002D334E /* CircleAndImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		30B2AB932BA37189002D334E /* TextFieldImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldImageView.swift; sourceTree = "<group>"; };
 		30B2AB952BA38712002D334E /* VacancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyView.swift; sourceTree = "<group>"; };
 		30B2AB982BA387CF002D334E /* VacancyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyViewModel.swift; sourceTree = "<group>"; };
+		30B2AB9A2BA4D1EE002D334E /* CircleAndImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAndImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				309CEA2C2BA2F59700C70B81 /* JobCellView.swift */,
 				309CEA352BA3137800C70B81 /* offerCellView.swift */,
 				30B2AB932BA37189002D334E /* TextFieldImageView.swift */,
+				30B2AB9A2BA4D1EE002D334E /* CircleAndImageView.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				309CEA2B2BA2EC3700C70B81 /* FindView.swift in Sources */,
 				309CEA322BA2FAD300C70B81 /* NetWorkmanager.swift in Sources */,
 				30B2AB942BA37189002D334E /* TextFieldImageView.swift in Sources */,
+				30B2AB9B2BA4D1EE002D334E /* CircleAndImageView.swift in Sources */,
 				30B2AB912BA36F1A002D334E /* VacancyListView.swift in Sources */,
 				309CEA342BA2FC8C00C70B81 /* FindViewModel.swift in Sources */,
 				30B2AB962BA38712002D334E /* VacancyView.swift in Sources */,
