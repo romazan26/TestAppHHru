@@ -36,7 +36,7 @@ struct LoginView: View {
                 }
             }
             .padding(10)
-            .background(Color.gray.opacity(0.4))
+            .background(Color.gray4.opacity(0.4))
             .cornerRadius(8)
             
             
@@ -48,7 +48,7 @@ struct LoginView: View {
                     } label: {
                         ZStack {
                             RoundedRectangle(cornerRadius: 25.0)
-                                .foregroundStyle(.green)
+                                .foregroundStyle(.specialgreen)
                                 .frame(height: 32)
                             Text("Я ищу сотрудников")
                                 .foregroundStyle(.white)
@@ -58,7 +58,7 @@ struct LoginView: View {
                 }
             
             .padding(10)
-            .background(Color.gray.opacity(0.4))
+            .background(Color.gray1.opacity(0.4))
             .cornerRadius(8)
             Spacer()
         }.padding()

@@ -114,7 +114,6 @@
 		309CEA242BA2DED900C70B81 /* LoginView */ = {
 			isa = PBXGroup;
 			children = (
-				309CEA222BA228C500C70B81 /* OTPTextField.swift */,
 				309CEA202BA1CAA700C70B81 /* LoginView.swift */,
 				309CEA252BA2DF0F00C70B81 /* LoginTwoView.swift */,
 				309CEA272BA2E1A700C70B81 /* LoginViewModel.swift */,
@@ -149,6 +148,7 @@
 				30B2AB932BA37189002D334E /* TextFieldImageView.swift */,
 				30B2AB9A2BA4D1EE002D334E /* CircleAndImageView.swift */,
 				30B2AB9C2BA4E140002D334E /* HeartView.swift */,
+				309CEA222BA228C500C70B81 /* OTPTextField.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";

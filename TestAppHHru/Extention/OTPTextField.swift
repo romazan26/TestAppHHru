@@ -27,10 +27,10 @@ struct OTPTextField: View {
                     if editing {
                         oldValue = enterValue[index]
                     }
-                })
+                }).foregroundStyle(.gray3)
                     .keyboardType(.numberPad)
                     .frame(width: 48, height: 48)
-                    .background(Color.gray.opacity(0.1))
+                    .background(Color.gray2.opacity(0.1))
                     .cornerRadius(5)
                     .multilineTextAlignment(.center)
                     .focused($fieldFocus, equals: index)

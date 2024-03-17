@@ -28,7 +28,7 @@ struct VacancyCellView: View {
                     Image(systemName: "gym.bag")
                         .resizable()
                         .frame(width: 16, height: 16)
-                    Text("Опубликовано \(vacancy.publishedDate)").foregroundStyle(.gray)
+                    Text("Опубликовано \(vacancy.publishedDate)").foregroundStyle(.gray3)
                 }
             }
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
@@ -42,7 +42,7 @@ struct VacancyCellView: View {
             })
         }
         .padding(10)
-        .background(Color.gray.opacity(0.4))
+        .background(Color.gray1.opacity(0.4))
         .cornerRadius(10)
         
     }
