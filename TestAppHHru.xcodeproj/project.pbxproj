@@ -15,13 +15,13 @@
 		309CEA1F2BA1C69800C70B81 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 309CEA1E2BA1C69800C70B81 /* AlamofireDynamic */; };
 		309CEA212BA1CAA700C70B81 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA202BA1CAA700C70B81 /* LoginView.swift */; };
 		309CEA232BA228C500C70B81 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA222BA228C500C70B81 /* OTPTextField.swift */; };
-		309CEA262BA2DF0F00C70B81 /* PinCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA252BA2DF0F00C70B81 /* PinCodeView.swift */; };
+		309CEA262BA2DF0F00C70B81 /* LoginTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA252BA2DF0F00C70B81 /* LoginTwoView.swift */; };
 		309CEA282BA2E1A700C70B81 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA272BA2E1A700C70B81 /* LoginViewModel.swift */; };
-		309CEA2B2BA2EC3700C70B81 /* FindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA2A2BA2EC3700C70B81 /* FindView.swift */; };
-		309CEA2D2BA2F59700C70B81 /* JobCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA2C2BA2F59700C70B81 /* JobCellView.swift */; };
+		309CEA2B2BA2EC3700C70B81 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA2A2BA2EC3700C70B81 /* MainView.swift */; };
+		309CEA2D2BA2F59700C70B81 /* VacancyCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA2C2BA2F59700C70B81 /* VacancyCellView.swift */; };
 		309CEA302BA2F91700C70B81 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA2F2BA2F91700C70B81 /* Model.swift */; };
 		309CEA322BA2FAD300C70B81 /* NetWorkmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA312BA2FAD300C70B81 /* NetWorkmanager.swift */; };
-		309CEA342BA2FC8C00C70B81 /* FindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA332BA2FC8C00C70B81 /* FindViewModel.swift */; };
+		309CEA342BA2FC8C00C70B81 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA332BA2FC8C00C70B81 /* MainViewModel.swift */; };
 		309CEA362BA3137800C70B81 /* offerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA352BA3137800C70B81 /* offerCellView.swift */; };
 		30B2AB912BA36F1A002D334E /* VacancyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB902BA36F1A002D334E /* VacancyListView.swift */; };
 		30B2AB942BA37189002D334E /* TextFieldImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB932BA37189002D334E /* TextFieldImageView.swift */; };
@@ -29,6 +29,7 @@
 		30B2AB992BA387CF002D334E /* VacancyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB982BA387CF002D334E /* VacancyViewModel.swift */; };
 		30B2AB9B2BA4D1EE002D334E /* CircleAndImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB9A2BA4D1EE002D334E /* CircleAndImageView.swift */; };
 		30B2AB9D2BA4E140002D334E /* HeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB9C2BA4E140002D334E /* HeartView.swift */; };
+		30B2AB9F2BA7753D002D334E /* SelectedVacanciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2AB9E2BA7753D002D334E /* SelectedVacanciesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,13 +40,13 @@
 		309CEA142BA1C60B00C70B81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		309CEA202BA1CAA700C70B81 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		309CEA222BA228C500C70B81 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
-		309CEA252BA2DF0F00C70B81 /* PinCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeView.swift; sourceTree = "<group>"; };
+		309CEA252BA2DF0F00C70B81 /* LoginTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTwoView.swift; sourceTree = "<group>"; };
 		309CEA272BA2E1A700C70B81 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		309CEA2A2BA2EC3700C70B81 /* FindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindView.swift; sourceTree = "<group>"; };
-		309CEA2C2BA2F59700C70B81 /* JobCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCellView.swift; sourceTree = "<group>"; };
+		309CEA2A2BA2EC3700C70B81 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		309CEA2C2BA2F59700C70B81 /* VacancyCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyCellView.swift; sourceTree = "<group>"; };
 		309CEA2F2BA2F91700C70B81 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		309CEA312BA2FAD300C70B81 /* NetWorkmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkmanager.swift; sourceTree = "<group>"; };
-		309CEA332BA2FC8C00C70B81 /* FindViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewModel.swift; sourceTree = "<group>"; };
+		309CEA332BA2FC8C00C70B81 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		309CEA352BA3137800C70B81 /* offerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offerCellView.swift; sourceTree = "<group>"; };
 		30B2AB902BA36F1A002D334E /* VacancyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyListView.swift; sourceTree = "<group>"; };
 		30B2AB932BA37189002D334E /* TextFieldImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldImageView.swift; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		30B2AB982BA387CF002D334E /* VacancyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyViewModel.swift; sourceTree = "<group>"; };
 		30B2AB9A2BA4D1EE002D334E /* CircleAndImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAndImageView.swift; sourceTree = "<group>"; };
 		30B2AB9C2BA4E140002D334E /* HeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartView.swift; sourceTree = "<group>"; };
+		30B2AB9E2BA7753D002D334E /* SelectedVacanciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedVacanciesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,7 @@
 				30B2AB972BA387AF002D334E /* VacancyView */,
 				30B2AB922BA37145002D334E /* Extention */,
 				309CEA2E2BA2F8AB00C70B81 /* Model */,
-				309CEA292BA2EC1800C70B81 /* FindView */,
+				309CEA292BA2EC1800C70B81 /* MainView */,
 				309CEA242BA2DED900C70B81 /* LoginView */,
 				309CEA0D2BA1C60900C70B81 /* TestAppHHruApp.swift */,
 				309CEA0F2BA1C60900C70B81 /* TabViewBootamp.swift */,
@@ -114,20 +116,21 @@
 			children = (
 				309CEA222BA228C500C70B81 /* OTPTextField.swift */,
 				309CEA202BA1CAA700C70B81 /* LoginView.swift */,
-				309CEA252BA2DF0F00C70B81 /* PinCodeView.swift */,
+				309CEA252BA2DF0F00C70B81 /* LoginTwoView.swift */,
 				309CEA272BA2E1A700C70B81 /* LoginViewModel.swift */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
 		};
-		309CEA292BA2EC1800C70B81 /* FindView */ = {
+		309CEA292BA2EC1800C70B81 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				309CEA2A2BA2EC3700C70B81 /* FindView.swift */,
-				309CEA332BA2FC8C00C70B81 /* FindViewModel.swift */,
+				309CEA2A2BA2EC3700C70B81 /* MainView.swift */,
+				309CEA332BA2FC8C00C70B81 /* MainViewModel.swift */,
 				30B2AB902BA36F1A002D334E /* VacancyListView.swift */,
+				30B2AB9E2BA7753D002D334E /* SelectedVacanciesView.swift */,
 			);
-			path = FindView;
+			path = MainView;
 			sourceTree = "<group>";
 		};
 		309CEA2E2BA2F8AB00C70B81 /* Model */ = {
@@ -141,7 +144,7 @@
 		30B2AB922BA37145002D334E /* Extention */ = {
 			isa = PBXGroup;
 			children = (
-				309CEA2C2BA2F59700C70B81 /* JobCellView.swift */,
+				309CEA2C2BA2F59700C70B81 /* VacancyCellView.swift */,
 				309CEA352BA3137800C70B81 /* offerCellView.swift */,
 				30B2AB932BA37189002D334E /* TextFieldImageView.swift */,
 				30B2AB9A2BA4D1EE002D334E /* CircleAndImageView.swift */,
@@ -239,20 +242,21 @@
 				309CEA302BA2F91700C70B81 /* Model.swift in Sources */,
 				309CEA212BA1CAA700C70B81 /* LoginView.swift in Sources */,
 				30B2AB992BA387CF002D334E /* VacancyViewModel.swift in Sources */,
+				30B2AB9F2BA7753D002D334E /* SelectedVacanciesView.swift in Sources */,
 				309CEA232BA228C500C70B81 /* OTPTextField.swift in Sources */,
 				309CEA362BA3137800C70B81 /* offerCellView.swift in Sources */,
-				309CEA2D2BA2F59700C70B81 /* JobCellView.swift in Sources */,
+				309CEA2D2BA2F59700C70B81 /* VacancyCellView.swift in Sources */,
 				309CEA282BA2E1A700C70B81 /* LoginViewModel.swift in Sources */,
 				30B2AB9D2BA4E140002D334E /* HeartView.swift in Sources */,
-				309CEA2B2BA2EC3700C70B81 /* FindView.swift in Sources */,
+				309CEA2B2BA2EC3700C70B81 /* MainView.swift in Sources */,
 				309CEA322BA2FAD300C70B81 /* NetWorkmanager.swift in Sources */,
 				30B2AB942BA37189002D334E /* TextFieldImageView.swift in Sources */,
 				30B2AB9B2BA4D1EE002D334E /* CircleAndImageView.swift in Sources */,
 				30B2AB912BA36F1A002D334E /* VacancyListView.swift in Sources */,
-				309CEA342BA2FC8C00C70B81 /* FindViewModel.swift in Sources */,
+				309CEA342BA2FC8C00C70B81 /* MainViewModel.swift in Sources */,
 				30B2AB962BA38712002D334E /* VacancyView.swift in Sources */,
 				309CEA102BA1C60900C70B81 /* TabViewBootamp.swift in Sources */,
-				309CEA262BA2DF0F00C70B81 /* PinCodeView.swift in Sources */,
+				309CEA262BA2DF0F00C70B81 /* LoginTwoView.swift in Sources */,
 				309CEA0E2BA1C60900C70B81 /* TestAppHHruApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

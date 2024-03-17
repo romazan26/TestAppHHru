@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct VacancyListView: View {
-    @ObservedObject var viewModel: FindViewModel
+    @ObservedObject var viewModel: MainViewModel
     var body: some View {
         VStack{
             HStack{
@@ -23,7 +23,7 @@ struct VacancyListView: View {
                     NavigationLink {
                         VacancyView(viewModel: VacancyViewModel(vacancy: vacancy))
                     } label: {
-                        JobCellView(vacancy: vacancy)
+                        VacancyCellView(vacancy: vacancy)
                     }.foregroundStyle(.white)
                 }
             }
@@ -50,5 +50,5 @@ struct VacancyListView: View {
 }
 
 #Preview {
-    VacancyListView(viewModel: FindViewModel())
+    VacancyListView(viewModel: MainViewModel())
 }

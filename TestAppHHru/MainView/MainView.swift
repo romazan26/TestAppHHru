@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct FindView: View {
+struct MainView: View {
     
-    @StateObject var viewModel = FindViewModel()
+    @StateObject var viewModel = MainViewModel()
     
     var body: some View {
         NavigationStack {
@@ -25,7 +25,7 @@ struct FindView: View {
                 Text("Вакансии для вас").font(.title)
                 VStack {
                     ForEach(viewModel.vacancies.prefix(2), id: \.self.id) { vacancy in
-                        JobCellView(vacancy: vacancy)
+                        VacancyCellView(vacancy: vacancy)
                     }
                 }
                 NavigationLink {
@@ -62,5 +62,5 @@ struct FindView: View {
 }
     
     #Preview {
-        FindView()
+        MainView()
     }

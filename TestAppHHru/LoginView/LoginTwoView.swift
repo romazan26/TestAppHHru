@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PinCodeView: View {
+struct LoginTwoView: View {
     @ObservedObject var viewModel: LoginViewModel
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -24,5 +24,5 @@ struct PinCodeView: View {
 }
 
 #Preview {
-    PinCodeView(viewModel: LoginViewModel())
+    LoginTwoView(viewModel: LoginViewModel())
 }

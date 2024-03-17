@@ -26,7 +26,7 @@ struct LoginView: View {
                     }.buttonStyle(.borderedProminent)
                         .frame(width: 167, height: 40)
                         .sheet(isPresented: $viewModel.isCorrectEmail, content: {
-                            PinCodeView(viewModel: viewModel)
+                            LoginTwoView(viewModel: viewModel)
                         })
                     
                     Button("Войти с паролем") {

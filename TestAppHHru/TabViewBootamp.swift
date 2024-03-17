@@ -15,14 +15,14 @@ struct TabViewBootamp: View {
          
         TabView {
             if viewModel.isLogin {
-                FindView()
+                MainView()
                     .tabItem { Label("Поиск", systemImage: "magnifyingglass") }
             }else {
                 LoginView(viewModel: viewModel)
                     .tabItem { Label("Поиск", systemImage: "magnifyingglass") }
             }
                 
-            Text("Избранное")
+            SelectedVacanciesView(viewModel: MainViewModel())
                 .tabItem { Label("Избранное", systemImage: "heart") }
             Text("Отклики")
                 .tabItem { Label("Отклики", systemImage: "envelope") }

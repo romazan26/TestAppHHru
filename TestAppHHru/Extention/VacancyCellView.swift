@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct JobCellView: View {
+struct VacancyCellView: View {
     
     var vacancy: Vacancy
     
@@ -16,7 +16,7 @@ struct JobCellView: View {
             VStack(alignment: .leading, spacing: 5) {
                 HStack {
                     Text("Сейчас просматривает человек")
-                        .foregroundStyle(.green)
+                        .foregroundStyle(.specialgreen)
                     Spacer()
                     HeartView(isFavarite: vacancy.isFavorite)
                 }
@@ -24,20 +24,24 @@ struct JobCellView: View {
                 Text(vacancy.address.town)
                 Text(vacancy.company)
                 Text(vacancy.experience.previewText)
-                Text("Опубликовано \(vacancy.publishedDate)")
+                HStack {
+                    Image(systemName: "gym.bag")
+                        .resizable()
+                        .frame(width: 16, height: 16)
+                    Text("Опубликовано \(vacancy.publishedDate)").foregroundStyle(.gray)
+                }
             }
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                 
                 ZStack {
                     RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                         .frame(width: 296, height: 32)
-                        .foregroundStyle(.green)
+                        .foregroundStyle(.specialgreen)
                     Text("Откликнуться").foregroundStyle(.white)
                 }
             })
         }
         .padding(10)
-        //.frame(width: 328, height: 233)
         .background(Color.gray.opacity(0.4))
         .cornerRadius(10)
         
@@ -45,5 +49,5 @@ struct JobCellView: View {
 }
 
 #Preview {
-    JobCellView(vacancy: Vacancy(id: "1", lookingNumber: 1, title: "UI/UX дизайнер", address: Address(town: "Минск", street: "", house: ""), company: "Мобирикс", experience: Experience(previewText: "Опыт от 1 до 3 лет", text: ""), publishedDate: "2024-02-20", isFavorite: true, salary: Salary(full: "", short: ""), schedules: [], appliedNumber: 0, description: "", responsibilities: "", questions: []))
+    VacancyCellView(vacancy: Vacancy(id: "1", lookingNumber: 1, title: "UI/UX дизайнер", address: Address(town: "Минск", street: "", house: ""), company: "Мобирикс", experience: Experience(previewText: "Опыт от 1 до 3 лет", text: ""), publishedDate: "2024-02-20", isFavorite: true, salary: Salary(full: "", short: ""), schedules: [], appliedNumber: 0, description: "", responsibilities: "", questions: []))
 }
