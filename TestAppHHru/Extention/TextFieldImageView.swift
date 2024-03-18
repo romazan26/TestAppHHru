@@ -17,16 +17,16 @@ struct TextFieldImageView: View {
             HStack {
                 Image(systemName: systemImage)
                     .padding(5)
-                    .foregroundStyle(.gray2)
+                    .foregroundStyle(.newgray)
                 TextField(placeholder, text: $text)
             }
             .frame(width: 320,height: 40)
         }
-        .background(Color.gray2.opacity(0.4)).cornerRadius(8)
+        .background(Color.newgray.opacity(0.4)).cornerRadius(8)
         
     }
 }
 
 #Preview {
-    TextFieldImageView( text: .constant(""))
+    TextFieldImageView( systemImage: "envelope", placeholder: "email", text: .constant(""))
 }

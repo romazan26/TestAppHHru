@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302B60FF2BA8204A00375D8D /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302B60FE2BA8204A00375D8D /* MapModel.swift */; };
 		309CEA0E2BA1C60900C70B81 /* TestAppHHruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA0D2BA1C60900C70B81 /* TestAppHHruApp.swift */; };
 		309CEA102BA1C60900C70B81 /* TabViewBootamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA0F2BA1C60900C70B81 /* TabViewBootamp.swift */; };
 		309CEA122BA1C60B00C70B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309CEA112BA1C60B00C70B81 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		302B60FE2BA8204A00375D8D /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		309CEA0A2BA1C60900C70B81 /* TestAppHHru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAppHHru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309CEA0D2BA1C60900C70B81 /* TestAppHHruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppHHruApp.swift; sourceTree = "<group>"; };
 		309CEA0F2BA1C60900C70B81 /* TabViewBootamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewBootamp.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				309CEA2F2BA2F91700C70B81 /* Model.swift */,
+				302B60FE2BA8204A00375D8D /* MapModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				30B2AB912BA36F1A002D334E /* VacancyListView.swift in Sources */,
 				309CEA342BA2FC8C00C70B81 /* MainViewModel.swift in Sources */,
 				30B2AB962BA38712002D334E /* VacancyView.swift in Sources */,
+				302B60FF2BA8204A00375D8D /* MapModel.swift in Sources */,
 				309CEA102BA1C60900C70B81 /* TabViewBootamp.swift in Sources */,
 				309CEA262BA2DF0F00C70B81 /* LoginTwoView.swift in Sources */,
 				309CEA0E2BA1C60900C70B81 /* TestAppHHruApp.swift in Sources */,

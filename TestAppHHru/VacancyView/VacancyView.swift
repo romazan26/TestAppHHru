@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct VacancyView: View {
     
     @ObservedObject var viewModel: VacancyViewModel
+    
     
     var body: some View {
         ScrollView {
@@ -30,6 +32,11 @@ struct VacancyView: View {
                                        text2: "человека сейчас смотрят",
                                        imageName: "eye")
                 }
+                
+                Map()
+                    .frame(height: 110)
+                    
+                
                 VStack(alignment: .leading){
                     Text(viewModel.vacancy.description ?? "")
                     Text("Ваши задачи")
