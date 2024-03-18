@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		302B60FF2BA8204A00375D8D /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302B60FE2BA8204A00375D8D /* MapModel.swift */; };
+		302B61022BA825A400375D8D /* MapAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302B61012BA825A400375D8D /* MapAPI.swift */; };
 		309CEA0E2BA1C60900C70B81 /* TestAppHHruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA0D2BA1C60900C70B81 /* TestAppHHruApp.swift */; };
 		309CEA102BA1C60900C70B81 /* TabViewBootamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CEA0F2BA1C60900C70B81 /* TabViewBootamp.swift */; };
 		309CEA122BA1C60B00C70B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309CEA112BA1C60B00C70B81 /* Assets.xcassets */; };
@@ -35,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		302B60FE2BA8204A00375D8D /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		302B61012BA825A400375D8D /* MapAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAPI.swift; sourceTree = "<group>"; };
+		302B61032BA84FD400375D8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		309CEA0A2BA1C60900C70B81 /* TestAppHHru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAppHHru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309CEA0D2BA1C60900C70B81 /* TestAppHHruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppHHruApp.swift; sourceTree = "<group>"; };
 		309CEA0F2BA1C60900C70B81 /* TabViewBootamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewBootamp.swift; sourceTree = "<group>"; };
@@ -72,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		302B61002BA8258200375D8D /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				309CEA312BA2FAD300C70B81 /* NetWorkmanager.swift */,
+				302B61012BA825A400375D8D /* MapAPI.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
 		309CEA012BA1C60900C70B81 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +103,8 @@
 		309CEA0C2BA1C60900C70B81 /* TestAppHHru */ = {
 			isa = PBXGroup;
 			children = (
+				302B61032BA84FD400375D8D /* Info.plist */,
+				302B61002BA8258200375D8D /* NetWork */,
 				30B2AB972BA387AF002D334E /* VacancyView */,
 				30B2AB922BA37145002D334E /* Extention */,
 				309CEA2E2BA2F8AB00C70B81 /* Model */,
@@ -100,7 +114,6 @@
 				309CEA0F2BA1C60900C70B81 /* TabViewBootamp.swift */,
 				309CEA112BA1C60B00C70B81 /* Assets.xcassets */,
 				309CEA132BA1C60B00C70B81 /* Preview Content */,
-				309CEA312BA2FAD300C70B81 /* NetWorkmanager.swift */,
 			);
 			path = TestAppHHru;
 			sourceTree = "<group>";
@@ -245,6 +258,7 @@
 				309CEA302BA2F91700C70B81 /* Model.swift in Sources */,
 				309CEA212BA1CAA700C70B81 /* LoginView.swift in Sources */,
 				30B2AB992BA387CF002D334E /* VacancyViewModel.swift in Sources */,
+				302B61022BA825A400375D8D /* MapAPI.swift in Sources */,
 				30B2AB9F2BA7753D002D334E /* SelectedVacanciesView.swift in Sources */,
 				309CEA232BA228C500C70B81 /* OTPTextField.swift in Sources */,
 				309CEA362BA3137800C70B81 /* offerCellView.swift in Sources */,
@@ -398,6 +412,7 @@
 				DEVELOPMENT_TEAM = AR6AN34RS9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestAppHHru/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -427,6 +442,7 @@
 				DEVELOPMENT_TEAM = AR6AN34RS9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestAppHHru/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

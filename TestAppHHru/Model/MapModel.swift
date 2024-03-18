@@ -13,7 +13,7 @@ struct AddressMap: Codable {
 }
  
 struct Datum: Codable {
-    let latitube, longitube: Double
+    let latitude, longitude: Double
     let name: String?
 }
 

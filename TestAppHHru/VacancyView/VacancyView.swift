@@ -11,6 +11,8 @@ import MapKit
 struct VacancyView: View {
     
     @ObservedObject var viewModel: VacancyViewModel
+    @StateObject private var mapApi = MapAPI()
+    
     
     
     var body: some View {
@@ -32,11 +34,15 @@ struct VacancyView: View {
                                        text2: "человека сейчас смотрят",
                                        imageName: "eye")
                 }
-                
-                Map()
-                    .frame(height: 110)
-                    
-                
+                //MARK: - Map
+                Map(coordinateRegion: $mapApi.region, annotationItems: mapApi.locations){ location in
+                    MapMarker(coordinate: location.coordinate, tint: .blue)
+                }
+                .onAppear(perform: {
+                    mapApi.getLocation(address: viewModel.vacancy.address.town, delta: 0.5)
+                })
+                .frame(height: 110)
+              //MARK: - Description Vacancy
                 VStack(alignment: .leading){
                     Text(viewModel.vacancy.description ?? "")
                     Text("Ваши задачи")

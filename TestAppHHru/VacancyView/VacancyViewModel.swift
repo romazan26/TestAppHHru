@@ -11,7 +11,6 @@ final class VacancyViewModel: ObservableObject {
      @Published var vacancy: Vacancy!
     init(vacancy: Vacancy!) {
         self.vacancy = vacancy
+       
     }
-    
-   
 }

@@ -11,7 +11,7 @@ final class LoginViewModel: ObservableObject {
     
     @Published var email = ""
     @Published var isCorrectEmail = false
-    @Published var isLogin = false
+    @Published var isLogin = true
     
     private let currentEmail = "example@mail.ru"
     
