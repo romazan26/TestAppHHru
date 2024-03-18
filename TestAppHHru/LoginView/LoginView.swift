@@ -11,6 +11,8 @@ struct LoginView: View {
     
     @ObservedObject var viewModel: LoginViewModel
     
+    @State private var isSelected = false
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("Вход в личный кабинет").font(.title2)
@@ -18,14 +20,22 @@ struct LoginView: View {
             VStack(spacing: 15) {
                 VStack(alignment: .leading, spacing: 5){
                     Text("Поиск работы")
-                    TextFieldImageView(systemImage: "envelope", placeholder: "Электронная почта или телефон", text: $viewModel.email)
+                    TextFieldImageView(systemImage: "envelope", 
+                                       placeholder: "Электронная почта или телефон",
+                                       text: $viewModel.email)
+                    .onChange(of: viewModel.email) { oldValue, newValue in
+                        viewModel.isValidEmail()
+                    }
+                    if !viewModel.isCorrectEmail {
+                        Text("Неверный формат email").foregroundStyle(.red)
+                    }
                 }
                 HStack{
                     Button("Продолжить") {
                         viewModel.checkEmail()
                     }.buttonStyle(.borderedProminent)
                         .frame(width: 167, height: 40)
-                        .sheet(isPresented: $viewModel.isCorrectEmail, content: {
+                        .sheet(isPresented: $viewModel.isLogin, content: {
                             LoginTwoView(viewModel: viewModel)
                         })
                     
@@ -58,7 +68,7 @@ struct LoginView: View {
                 }
             
             .padding(10)
-            .background(Color.gray1.opacity(0.4))
+            .background(Color.gray4.opacity(0.4))
             .cornerRadius(8)
             Spacer()
         }.padding()

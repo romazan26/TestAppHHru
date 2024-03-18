@@ -103,16 +103,16 @@
 		309CEA0C2BA1C60900C70B81 /* TestAppHHru */ = {
 			isa = PBXGroup;
 			children = (
-				302B61032BA84FD400375D8D /* Info.plist */,
+				309CEA0D2BA1C60900C70B81 /* TestAppHHruApp.swift */,
+				309CEA0F2BA1C60900C70B81 /* TabViewBootamp.swift */,
 				302B61002BA8258200375D8D /* NetWork */,
 				30B2AB972BA387AF002D334E /* VacancyView */,
 				30B2AB922BA37145002D334E /* Extention */,
 				309CEA2E2BA2F8AB00C70B81 /* Model */,
 				309CEA292BA2EC1800C70B81 /* MainView */,
 				309CEA242BA2DED900C70B81 /* LoginView */,
-				309CEA0D2BA1C60900C70B81 /* TestAppHHruApp.swift */,
-				309CEA0F2BA1C60900C70B81 /* TabViewBootamp.swift */,
 				309CEA112BA1C60B00C70B81 /* Assets.xcassets */,
+				302B61032BA84FD400375D8D /* Info.plist */,
 				309CEA132BA1C60B00C70B81 /* Preview Content */,
 			);
 			path = TestAppHHru;

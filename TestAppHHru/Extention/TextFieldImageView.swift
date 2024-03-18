@@ -19,6 +19,9 @@ struct TextFieldImageView: View {
                     .padding(5)
                     .foregroundStyle(.newgray)
                 TextField(placeholder, text: $text)
+                    .autocapitalization(.none)
+                    .keyboardType(.emailAddress)
+                    
             }
             .frame(width: 320,height: 40)
         }

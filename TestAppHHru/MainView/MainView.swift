@@ -25,7 +25,12 @@ struct MainView: View {
                 Text("Вакансии для вас").font(.title)
                 VStack {
                     ForEach(viewModel.vacancies.prefix(2), id: \.self.id) { vacancy in
-                        VacancyCellView(vacancy: vacancy)
+                        NavigationLink {
+                            VacancyView(viewModel: VacancyViewModel(vacancy: vacancy))
+                        } label: {
+                            VacancyCellView(vacancy: vacancy)
+                                .foregroundStyle(.white)
+                        }
                     }
                 }
                 NavigationLink {

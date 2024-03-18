@@ -42,7 +42,7 @@ struct VacancyCellView: View {
             })
         }
         .padding(10)
-        .background(Color.gray1.opacity(0.4))
+        .background(Color.gray2.opacity(0.4))
         .cornerRadius(10)
         
     }

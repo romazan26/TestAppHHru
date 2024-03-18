@@ -18,6 +18,8 @@ struct VacancyView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading){
+                
+                //MARK: - Options vacacy
                 VStack(alignment: .leading) {
                     Text(viewModel.vacancy.title).font(.title)
                     
@@ -34,14 +36,24 @@ struct VacancyView: View {
                                        text2: "человека сейчас смотрят",
                                        imageName: "eye")
                 }
-                //MARK: - Map
-                Map(coordinateRegion: $mapApi.region, annotationItems: mapApi.locations){ location in
-                    MapMarker(coordinate: location.coordinate, tint: .blue)
+                
+                //MARK: - Map adress
+                VStack(alignment: .leading) {
+                    Text(viewModel.vacancy.company).font(.title2)
+                    Map(coordinateRegion: $mapApi.region, annotationItems: mapApi.locations){ location in
+                        MapMarker(coordinate: location.coordinate, tint: .blue)
+                    }
+                    .cornerRadius(8)
+                    .onAppear(perform: {
+                        mapApi.getLocation(address: viewModel.adres, delta: 0.5)
+                    })
+                .frame(height: 58)
+                    Text(viewModel.adres)
                 }
-                .onAppear(perform: {
-                    mapApi.getLocation(address: viewModel.vacancy.address.town, delta: 0.5)
-                })
-                .frame(height: 110)
+                .padding()
+                .background(Color.gray1)
+                .cornerRadius(8)
+                
               //MARK: - Description Vacancy
                 VStack(alignment: .leading){
                     Text(viewModel.vacancy.description ?? "")
@@ -76,6 +88,7 @@ struct VacancyView: View {
                 }.padding(.top)
             }.padding(8)
         }
+        //MARK: - Toolbar
         .toolbar(content: {
             ToolbarItem {
                 HStack {
@@ -88,6 +101,7 @@ struct VacancyView: View {
     }
 }
 
+//MARK: - Preview
 #Preview {
     VacancyView(viewModel: VacancyViewModel(vacancy: Vacancy(id: "1", lookingNumber: 2, title: "UI/UX дизайнер", address: Address(town: "Минск", street: "", house: ""), company: "Мобирикс", experience: Experience(previewText: "Опыт от 1 до 3 лет", text: ""), publishedDate: "2024-02-20", isFavorite: true, salary: Salary(full: "Уровень дохода не указан", short: ""), schedules: ["частичная занятость","полный день"], appliedNumber: 147, description: "Мы ищем специалиста на позицию UX/UI Designer, который вместе с коллегами будет заниматься проектированием пользовательских интерфейсов внутренних и внешних продуктов компании.", responsibilities: "- проектирование пользовательских сценариев и создание прототипов;\n- разработка интерфейсов для продуктов компании (Web+App);\n- работа над созданием и улучшением Дизайн-системы;\n- взаимодействие с командами frontend-разработки;\n- контроль качества внедрения дизайна;\n- ситуативно: создание презентаций и других материалов на основе фирменного стиля компании", questions: ["Где располагается место работы?","Какой график работы?","Вакансия открыта?","Какая оплата труда?"])))
 }

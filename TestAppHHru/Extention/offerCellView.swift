@@ -39,16 +39,19 @@ struct offerCellView: View {
                 }
             }
             if offer.id == "temporary_job" {
-                Circle()
-                    .frame(width: 32,height: 32)
-                    .foregroundStyle(.green)
+                ZStack{
+                    Circle()
+                        .frame(width: 32,height: 32)
+                        .foregroundStyle(.specialDarkgreen)
+                    Image(systemName: "list.clipboard")
+                }
             }
             Text(offer.title)
                 .foregroundStyle(.white)
                 .font(.system(size: 14))
         }
         .frame(width: 132, height: 110)
-        .background(Color.gray1.opacity(0.4))
+        .background(Color.gray2.opacity(0.4))
         .cornerRadius(10)
     }
 }
